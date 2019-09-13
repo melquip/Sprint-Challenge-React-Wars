@@ -6,7 +6,7 @@ React is a Javascript library and the main problem it solves is the poor perform
 
 2. What does it mean to think in react?
 
-
+Thinking in react means that when building applications we should think about how React re-renders the UI on any state changes, code reusable components and pass data down via props.
 
 3. Describe state.
 
@@ -18,4 +18,4 @@ Props or `properties` are the different parameters we can send to components in 
 
 5. What are side effects, and how do you sync effects in a React component to state or prop changes?
 
-Side effects are
+Side effects when we're using `useEffect` run after the DOM is rendered and also after any of the variables in the array (second parameter) are updated, so if we want to sync effects with a component we need to pass its state or props in that array.

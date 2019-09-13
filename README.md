@@ -24,15 +24,25 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+React is a Javascript library and the main problem it solves is the poor performance of DOM operations. React solves this problem without reloading the page and updating only the changed nodes with the help of a virtual DOM and Hot Reloading.
 
-- [ ] Describe state.
+- [x] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+Thinking in react means that when building applications we should think about how React re-renders the UI on any state changes, code reusable components and pass data down via props.
 
-- [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+- [x] Describe state.
+
+State is the applications' way to store data and update the UI accordingly without reloading the page.
+
+- [x] Describe props.
+
+Props or `properties` are the different parameters we can send to components in order to pass down data from the parent component and render the application according to that data.
+
+- [x] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects when we're using `useEffect` run after the DOM is rendered and also after any of the variables in the array (second parameter) are updated, so if we want to sync effects with a component we need to pass its state or props in that array.
 
 ## Project Set Up
 
@@ -84,7 +94,7 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
   - [react-testing-library](https://github.com/testing-library/react-testing-library#basic-example)
   - [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html)
 
-- [ ] Build a pagination system that will allow you to load the next page of data.
+- [x] Build a pagination system that will allow you to load the next page of data.
   - `console.log()` the data coming back from the server.
   - Notice that there are `next` and `previous` fields that give you a URL.
   - You can build a function that will get characters called `getCharacters` that you can use dynamically to get the next or previous set of characters. You would need to supply it with the proper fields, and you'll need to set up more state to do this.

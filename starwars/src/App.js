@@ -50,7 +50,7 @@ const App = () => {
 			<div className="header">
 				<h1>React Wars</h1>
 				<div className="page">
-					<label htmlFor="page">Page: </label>
+					<label htmlFor="page"><b>Page:</b> </label>
 					<input type="number" id="page" min="1" max="9" value={page} required onChange={(e) => setPage(e.target.value)} />
 				</div>
 			</div>

@@ -17,9 +17,12 @@ export const GlobalStyles = createGlobalStyle`
 	}
 	.header {
 		text-align: center;
+		padding: 50px 50px 25px;
 		h1 {
-			padding: 50px 0 25px;
-			color: blueviolet
+			color: blueviolet;
+		}
+		.page {
+			padding-top: 10px;
 		}
 		input {
 			appearance: none;
