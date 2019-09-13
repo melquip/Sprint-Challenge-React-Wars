@@ -1,14 +1,20 @@
 import React from 'react';
 
-const Person = ({data}) => {
+const Person = ({ data }) => {
 	return (
 		<div className="person">
 			<h2>{data.name}</h2>
-			<p>Height: {data.height}</p>
-			<p>Hair Color: {data.hair_color}</p>
-			<p>Eye Color: {data.eye_color}</p>
-			<p>Birth Year: {data.birth_year}</p>
-			<p>Gender: {data.gender}</p>
+			<p><b>Height:</b> {data.height}</p>
+			{
+				data.hair_color !== 'n/a' && data.hair_color !== 'none' ? 
+					<p><b>Hair Color:</b> {data.hair_color}</p> : null 
+			}
+			<p><b>Eye Color:</b> {data.eye_color}</p>
+			<p><b>Birth Year:</b> {data.birth_year}</p>
+			{
+				data.gender !== 'n/a' && data.gender !== 'none' ? 
+					<p><b>Gender:</b> {data.gender}</p> : null 
+			}
 		</div>
 	)
 }

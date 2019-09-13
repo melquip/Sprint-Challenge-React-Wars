@@ -11,10 +11,20 @@ export const GlobalStyles = createGlobalStyle`
 		min-height: 100vh;
 	}
 	body {
-		margin: 0;
-		padding: 0;
 		font-family: sans-serif;
 		background-image: url(${image});
 		background-size: cover;
+	}
+	.header {
+		text-align: center;
+		h1 {
+			padding: 50px 0 25px;
+			color: blueviolet
+		}
+		input {
+			appearance: none;
+			text-align: center;
+			width: 30px;
+		}
 	}
 `;
